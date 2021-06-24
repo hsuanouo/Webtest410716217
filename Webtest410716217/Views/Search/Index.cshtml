@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Index", "Search", FormMethod.Get))
+{
+
+    <p>請輸入數字：@Html.TextBox("number")</p>
+    <p>查詢結果：@ViewBag.result</p>
+
+    <input type="submit" value="送出" />
+}
+
